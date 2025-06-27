@@ -3,9 +3,9 @@ import torchvision.models as models
 import torchvision.transforms as transforms
 
 def load_model():
-    # Chargement de ResNet18 pré-entraîné sur ImageNet
+    
     model = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
-    model.eval()  # Mode évaluation, pas d'entraînement
+    model.eval()  
     return model
 
 def get_class_labels():
