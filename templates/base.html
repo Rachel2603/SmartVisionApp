@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}SmartVision{% endblock %}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">SmartVision</span>
+  </nav>
+
+  <main class="container my-5">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer text-center bg-dark text-white py-3">
+    © 2025 – Projet IA dans le Cloud
+  </footer>
+</body>
+</html>

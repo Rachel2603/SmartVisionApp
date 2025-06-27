@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résultat de l'analyse</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .nav-link, .navbar-text {
+      color: white !important;
+    }
+    .result-container {
+      margin-top: 80px;
+    }
+    .result-label {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    .prediction {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #007bff;
+    }
+    .btn-custom {
+      margin-top: 30px;
+    }
+    .footer {
+      margin-top: 60px;
+      padding: 12px;
+      background-color: #343a40;
+      color: #ccc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">SmartVision</a>
+  </nav>
+
+  <div class="container text-center result-container">
+    <h2>Résultat de l'analyse</h2>
+    <p class="result-label">L'image semble contenir un(e) :</p>
+    <p class="prediction">{{ label }}</p>
+    <a href="/" class="btn btn-secondary btn-custom">Revenir à l'accueil</a>
+  </div>
+
+  <div class="footer">
+    © 2025 – Projet IA dans le Cloud
+  </div>
+</body>
+</html>
